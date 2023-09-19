@@ -1,0 +1,9 @@
+MASS of LIGHTEST PARTICLE: 1
+MASS SPECTRUM: 1 1.25 1.44 1.5 1.78 1.9
+GRID TYPE: custom ## either 'uniform' 'exp' or 'custom'
+##GRID PARAMETRE(S): 30 1.5 10 
+GRID PARAMETRE(S): sample_custom_grid.npy
+## CONTENTS of GRID PARAMETRES DEPEND ON GRID TYPE... ##
+## uniform: 1000 100 ## first value is number of grid points, second value is grid_tail which must be > 4##
+## exp: 30 1.5 10 ## {M} {\alpha} {b} ## x_i = 4 + b* (i^\alpha), 0 < i <= M
+## custom: {filename of the file containing user-defined grid point} ## the file must be numpy save file .npy containing a single vector 
